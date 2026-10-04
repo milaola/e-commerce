@@ -25,19 +25,19 @@ const App = () => {
 
       <Routes>
 
-       
+
         <Route
           path="/"
           element={<Home />}
         />
 
-        
+
         <Route
           path="/products"
           element={<Products />}
         />
 
-      
+
         <Route
           path="/products/:id"
           element={<ProductDetails />}
@@ -63,19 +63,19 @@ const App = () => {
           />
         </Route>
 
-       
+
         <Route
           path="/cart"
           element={<Cart />}
         />
 
-      
+
         <Route
           path="/login"
           element={<Login />}
         />
 
-        
+
         <Route element={<ProtectedRoute />}>
           <Route
             path="/checkout"
@@ -83,7 +83,7 @@ const App = () => {
           />
         </Route>
 
-        
+
         <Route
           path="*"
           element={
