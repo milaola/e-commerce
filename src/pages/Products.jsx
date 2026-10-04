@@ -3,9 +3,7 @@ import {useEffect,useMemo,useState,} from "react";
 import ProductList from "../components/ProductList";
 import SearchFilter from "../components/SearchFilter";
 
-import {
-    useFilters,
-} from "../context/FilterContext";
+import {useFilters,} from "../context/FilterContext";
 
 const Products = () => {
 
@@ -39,7 +37,7 @@ const Products = () => {
 
                     const response =
                         await fetch(
-                            "https://fakestoreapi.com/products"
+                            "https://dummyjson.com/products"
                         );
 
                     if (!response.ok) {
@@ -48,10 +46,9 @@ const Products = () => {
                         );
                     }
 
-                    const data =
-                        await response.json();
+                    const data = await response.json();
 
-                    setProducts(data);
+                    setProducts(data.products);
 
                     const uniqueCategories =
                         [
@@ -90,7 +87,7 @@ const Products = () => {
 
             let result = [...products];
 
-            // SEARCH
+       
             if (searchTerm.trim()) {
 
                 result = result.filter(
@@ -103,7 +100,7 @@ const Products = () => {
                 );
             }
 
-            // CATEGORY
+          
             if (category !== "all") {
 
                 result = result.filter(
@@ -113,7 +110,7 @@ const Products = () => {
                 );
             }
 
-            // SORT
+           
             if (sortBy === "price-low") {
 
                 result.sort(

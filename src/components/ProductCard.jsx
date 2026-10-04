@@ -1,13 +1,8 @@
-import { Card,CardContent,CardFooter,
-} from "@/components/ui/card";
+import { Card, CardContent, CardFooter, } from "@/components/ui/card";
 
-import {
-  Button,
-} from "@/components/ui/button";
+import { Button } from "@/components/ui/button";
 
-import {
-  Badge,
-} from "@/components/ui/badge";
+import { Badge } from "@/components/ui/badge";
 
 import { useCart } from "../context/CartContext";
 
@@ -26,7 +21,7 @@ const ProductCard = ({
         <div className="flex h-64 items-center justify-center p-6">
 
           <img
-            src={product.image}
+            src={product.thumbnail}
             alt={product.title}
             className="h-full w-full object-contain transition-transform duration-300 group-hover:scale-105"
           />
