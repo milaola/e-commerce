@@ -1,5 +1,5 @@
 
-import {BrowserRouter,Routes,Route} from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
 import ProtectedRoute from "./components/ProtectedRoute";
@@ -8,7 +8,7 @@ import Home from "./pages/Home";
 import Products from "./pages/Products";
 import ProductDetails from "./pages/ProductDetails";
 import ProductOverview from "./pages/ProductOverview";
-import ProductSpecifications from "./pages/ProductSpecifications";
+import ProductSpecification from "./pages/ProductSpecification";
 import Cart from "./pages/Cart";
 import Checkout from "./pages/Checkout";
 import Login from "./pages/Login";
