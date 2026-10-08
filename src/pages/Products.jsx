@@ -27,6 +27,8 @@ const Products = () => {
         sortBy,
     } = useFilters();
 
+    
+
     useEffect(() => {
 
         const fetchProducts =

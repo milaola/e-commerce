@@ -4,6 +4,7 @@ import { Input } from "@/components/ui/input";
 
 import { useCart } from "../context/CartContext";
 
+
 const Navbar = () => {
   const { cartCount } = useCart();
   const navigate = useNavigate();
@@ -65,45 +66,7 @@ const Navbar = () => {
               Products
             </Link>
 
-            <Link
-              to="/categories"
-              className={`rounded-md px-4 py-2 text-sm font-medium transition ${
-                isActive("/categories")
-                  ? "bg-purple-100 text-purple-700"
-                  : "text-gray-600 hover:bg-gray-100 hover:text-gray-900"
-              }`}
-            >
-              Categories
-            </Link>
-
-            <Link
-              to="/orders"
-              className={`rounded-md px-4 py-2 text-sm font-medium transition ${
-                isActive("/orders")
-                  ? "bg-purple-100 text-purple-700"
-                  : "text-gray-600 hover:bg-gray-100 hover:text-gray-900"
-              }`}
-            >
-              Orders
-            </Link>
           </div>
-
-        
-          <div className="hidden flex-1 max-w-sm lg:block">
-            <Input
-              placeholder="Search products..."
-              onKeyDown={(event) => {
-                if (event.key === "Enter") {
-                  navigate(
-                    `/products?search=${encodeURIComponent(
-                      event.target.value
-                    )}`
-                  );
-                }
-              }}
-            />
-          </div>
-
           
           <div className="flex items-center gap-3">
 
