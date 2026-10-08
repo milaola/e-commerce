@@ -149,7 +149,7 @@ const Login = () => {
       </Card>
 
     </main>
-  )
-}
+  );
+};
 
-export default Login
+export default Login;

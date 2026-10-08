@@ -79,13 +79,13 @@ const Checkout = () => {
 
   return (
     <main className="mx-auto max-w-5xl px-4 py-10">
-      <h1 className="text-3xl font-bold">
+      <h1 className="text-3xl font-bold bg-purple-750 w-full h-16 bg-purple-700 px-6">
         Checkout
       </h1>
 
       <div className="mt-8 grid gap-8 md:grid-cols-2">
 
-        {/* Checkout Form */}
+        
         <Card>
           <CardContent className="p-6">
             <h2 className="text-xl font-semibold">
@@ -164,7 +164,7 @@ const Checkout = () => {
           </CardContent>
         </Card>
 
-        {/* Order Summary */}
+      
         <Card>
           <CardContent className="p-6">
             <h2 className="text-xl font-semibold">
@@ -211,7 +211,7 @@ const Checkout = () => {
 
       </div>
     </main>
-  )
-}
+  );
+};
 
-export default Checkout
+export default Checkout;

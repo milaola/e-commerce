@@ -80,6 +80,7 @@ const Home = () => {
               <p className="mt-3 text-gray-500">
                 Enjoy a simple and protected checkout.
               </p>
+              <Button>Shop Now</Button>
             </CardContent>
           </Card>
 

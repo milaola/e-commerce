@@ -1,10 +1,13 @@
-import { Card, CardContent, CardFooter, } from "@/components/ui/card";
+import { Link } from "react-router-dom";
+import { ShoppingCart } from "lucide-react";
+
+import { Card,CardContent,CardFooter } from "@/components/ui/card";
 
 import { Button } from "@/components/ui/button";
-
 import { Badge } from "@/components/ui/badge";
 
 import { useCart } from "../context/CartContext";
+
 
 const ProductCard = ({
   product,

@@ -48,13 +48,8 @@ const App = () => {
           />
 
           <Route
-            path="reviews"
-            element={<ProductReviews />}
-          />
-
-          <Route
             path="specifications"
-            element={<ProductSpecifications />}
+            element={<ProductSpecification />}
           />
         </Route>
 
@@ -65,18 +60,19 @@ const App = () => {
         />
 
 
-        <Route
-          path="/login"
-          element={<Login />}
-        />
-
-
         <Route element={<ProtectedRoute />}>
           <Route
             path="/checkout"
             element={<Checkout />}
           />
+
         </Route>
+
+        
+        <Route
+          path="/login"
+          element={<Login />}
+        />
 
 
         <Route

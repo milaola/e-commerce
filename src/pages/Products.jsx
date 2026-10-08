@@ -53,7 +53,7 @@ const Products = () => {
                     const uniqueCategories =
                         [
                             ...new Set(
-                                data.map(
+                                data.products.map(
                                     (product) =>
                                         product.category
                                 )
