@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-import {Card,CardContent} from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 
 import { Button } from "@/components/ui/button";
 
@@ -17,7 +17,7 @@ const Home = () => {
             </p>
 
             <h1 className="mt-4 text-4xl font-bold md:text-6xl">
-              Everything you need in one place.
+              Click Shop Now and start Shopping
             </h1>
 
             <p className="mt-6 text-lg text-white/80">
@@ -28,7 +28,7 @@ const Home = () => {
               asChild
               size="lg"
               variant="secondary"
-              className="mt-8"
+              className="mt-8 bg-green-700"
             >
               <Link to="/products">
                 Shop Now
@@ -80,7 +80,17 @@ const Home = () => {
               <p className="mt-3 text-gray-500">
                 Enjoy a simple and protected checkout.
               </p>
-              <Button>Shop Now</Button>
+
+              <Button
+                asChild
+                size="lg"
+                variant="secondary"
+                className="mt-8 bg-black text-white"
+              >
+                <Link to="/products">
+                  Shop Now
+                </Link>
+              </Button>
             </CardContent>
           </Card>
 

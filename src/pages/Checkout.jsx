@@ -62,9 +62,10 @@ const Checkout = () => {
             Order Placed Successfully!
           </h1>
 
-          <p className="mt-3 text-gray-500">
+          <p className="mt-3 text-gray-500 semi-bold">
             Thank you for shopping with ShopEase.
           </p>
+          <p className="mt-3 text-dark grey-500 bold">Would you like to continue shopping?</p>
 
           <Button
             className="mt-6"

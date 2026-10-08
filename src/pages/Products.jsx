@@ -5,6 +5,8 @@ import SearchFilter from "../components/SearchFilter";
 
 import {useFilters,} from "../context/FilterContext";
 
+
+
 const Products = () => {
 
     const [products, setProducts] =
@@ -182,4 +184,4 @@ const Products = () => {
     );
 };
 
-export default Products
+export default Products;
